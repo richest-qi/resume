@@ -94,9 +94,6 @@ ul {
 .basic_info_item div:hover a{
     color:hsla(0,100%,0%,1);
 }
-.basic_info_item div:hover .icon{
-    filter:hue-rotate(35deg) saturate(5);
-}
 
 .abilities .icon{
     display: none;
