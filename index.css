@@ -91,8 +91,14 @@ ul {
 .basic_info_item a{
     color: hsla(0,50%,0%,.65);
 }
-.basic_info_item div:hover a{
+.basic_info_item div:hover,
+.basic_info_item div:hover a,
+.contact_item:hover{
     color:hsla(0,100%,0%,1);
+}
+.basic_info_item div:hover .icon,
+.contact_item:hover .icon{
+    filter:hue-rotate(35deg) saturate(5);
 }
 
 .abilities .icon{
