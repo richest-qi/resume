@@ -34,10 +34,13 @@ ul {
 
 .avatar {
   font-size: 0; }
+  @media screen and (min-width: 768px) {
+    .avatar {
+      text-align: center; } }
   .avatar .name {
     font-size: 28px; }
   .avatar img {
-    background-color: lightskyblue;
+    border: 5px solid lightskyblue;
     border-radius: 50%; }
 
 .about,
