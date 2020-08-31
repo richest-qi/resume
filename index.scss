@@ -165,10 +165,10 @@ ul {
     a{
         color: hsla(0,50%,0%,.65);
         text-decoration: none;
-    }
-    &:hover{
-        color:hsla(0,100%,0%,1);
-        text-decoration: underline;
+        &:hover{
+            color:hsla(0,100%,0%,1);
+            text-decoration: underline;
+        }
     }
 }
 

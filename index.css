@@ -135,9 +135,9 @@ ul {
   .des a {
     color: rgba(0, 0, 0, 0.65);
     text-decoration: none; }
-  .des:hover {
-    color: black;
-    text-decoration: underline; }
+    .des a:hover {
+      color: black;
+      text-decoration: underline; }
 
 .content_item #sz {
   padding-right: 2px;
