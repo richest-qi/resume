@@ -101,6 +101,7 @@ ul {
 
 .square {
   position: absolute;
+  clip: rect(0, 0, 0, 0);
   clip-path: polygon(0 0, 0 0, 0 0, 0 0); }
   .square + label:before {
     display: inline-block;
