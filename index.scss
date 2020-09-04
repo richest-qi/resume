@@ -57,14 +57,12 @@ ul {
     }
 }
 
-.about_item, 
-.contact_item,
-.content_item .des{
-    .icon{
-        display: inline-block;
-        vertical-align: middle;
-    }
-
+.about_item .icon, 
+.contact_item .icon,
+.skill_item .star,
+.content_item .des .icon{
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .about_item div,
