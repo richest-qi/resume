@@ -11,7 +11,7 @@ ul {
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1150px;
   min-width: 256px;
   padding: 10px 10px 10px 20px;
   background-color: mediumaquamarine;
@@ -36,7 +36,8 @@ ul {
   font-size: 0; }
   @media screen and (min-width: 768px) {
     .avatar {
-      text-align: center; } }
+      text-align: center;
+      max-width: 265px; } }
   .avatar .name {
     font-size: 28px; }
   .avatar img {
@@ -61,7 +62,7 @@ ul {
 
 .about_item div,
 .contact_item,
-.skill_item,
+.skill_item .skill_head,
 .content_item .des {
   line-height: 20px; }
 
@@ -99,23 +100,19 @@ ul {
     .skill_name {
       margin-right: 10px; } }
 
-.square {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  clip-path: polygon(0 0, 0 0, 0 0, 0 0); }
-  .square + label:before {
+.skill_item {
+  padding-bottom: 5px; }
+  .skill_item .skill_icon {
     display: inline-block;
-    content: "\A0";
-    width: 16px;
-    height: 16px;
-    line-height: .65;
-    font-size: 18px;
-    border-radius: 3px;
-    background-color: #096dd9;
+    width: 20px;
     vertical-align: middle;
-    text-align: center; }
-  .square:checked + label:before {
-    content: "\2713"; }
+    margin-right: 5px; }
+  .skill_item .skill_content {
+    margin-left: 30px;
+    margin-top: -5px;
+    font-size: 14px; }
+    .skill_item .skill_content div {
+      line-height: 20px; }
 
 .content .title {
   font-size: 24px;
@@ -151,14 +148,35 @@ ul {
   padding-left: 2px; }
 
 .project_list {
-  font-size: 14px;
-  padding: 5px 0 0 66px; }
+  padding: 5px 0 0 50px; }
   .project_list .project:not(:first-child) {
     margin-top: 5px; }
-  .project_list div {
-    color: rgba(0, 0, 0, 0.65);
+  .project_list .project div:not(:first-child) {
+    font-size: 14px; }
+  .project_list .project div {
     line-height: 20px; }
-    .project_list div:first-child {
-      color: black; }
+  .project_list .project .project_title {
+    font-size: 15px; }
+
+.situation div:not(:first-child),
+.effect div:not(:first-child),
+.action ul {
+  color: rgba(0, 0, 0, 0.65); }
+
+.situation div:first-child:before,
+.effect div:first-child:before,
+.action div:before {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  content: "";
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  margin-right: 3px; }
+
+.situation div:nth-child(2),
+.effect div:nth-child(2),
+.action ul {
+  margin: 2px 0 2px 12px; }
 
 /*# sourceMappingURL=index.css.map */
